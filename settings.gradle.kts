@@ -1,1 +1,1 @@
-rootProject.name = "ActiveEditorPlugin"
+rootProject.name = "ActiveEditor"

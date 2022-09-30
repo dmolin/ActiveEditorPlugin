@@ -1,16 +1,22 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
     <id>com.davidemolin.activeeditor.plugin</id>
-    <name>Active Editor</name>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>ActiveEditor</name>
     <vendor email="davide@davidemolin.com" url="https://github.com/dmolin">dmolin</vendor>
     <version>1.0.0</version>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
 
     <projectListeners>
         <listener
-            class="com.davidemolin.intellij.plugin.activeeditor.listeners.CurrentEditorListener"
-            topic="com.intellij.codeInsight.daemon.impl.EditorTrackerListener"
+                class="com.davidemolin.intellij.plugin.activeeditor.listeners.CurrentEditorListener"
+                topic="com.intellij.codeInsight.daemon.impl.EditorTrackerListener"
         />
     </projectListeners>
-
 </idea-plugin>

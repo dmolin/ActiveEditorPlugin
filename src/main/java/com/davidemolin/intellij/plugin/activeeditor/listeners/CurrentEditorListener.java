@@ -1,12 +1,12 @@
 package com.davidemolin.intellij.plugin.activeeditor.listeners;
 
+import com.intellij.codeInsight.daemon.impl.EditorTrackerListener;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.colors.EditorColorsScheme;
 import com.intellij.openapi.editor.impl.EditorImpl;
 import org.jetbrains.annotations.NotNull;
-import java.awt.Color;
 
-import com.intellij.codeInsight.daemon.impl.EditorTrackerListener;
+import java.awt.*;
 
 public class CurrentEditorListener implements EditorTrackerListener {
 
@@ -23,7 +23,7 @@ public class CurrentEditorListener implements EditorTrackerListener {
         return darkerColor(c, -amount);
     }
 
-    @java.lang.Override
+    @Override
     public void activeEditorsChanged(java.util.@NotNull List<? extends Editor> activeEditors) {
         for (int i = 0; i < activeEditors.size(); i++) {
             EditorImpl editor = (EditorImpl) activeEditors.get(i);
