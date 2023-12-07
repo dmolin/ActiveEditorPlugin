@@ -7,7 +7,7 @@
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
     <name>ActiveEditor</name>
     <vendor email="davide@davidemolin.com" url="https://github.com/dmolin">dmolin</vendor>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <!-- Product and plugin compatibility requirements.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
